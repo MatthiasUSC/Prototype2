@@ -38,18 +38,19 @@ public class PlayerController : MonoBehaviour
         }
 
         // Controls
-        float horizontalVel = GetComponent<Rigidbody2D>().velocity.x;
-        float horizontalForce = horizontalAccel * GetComponent<Rigidbody2D>().mass;
-
-        if(Input.GetKey(left)){
-            if(horizontalVel >= -maxHorizontalSpeed){
-                GetComponent<Rigidbody2D>().AddForce(Vector2.left * horizontalForce);
+        if(isGrounded){
+            float horizontalVel = GetComponent<Rigidbody2D>().velocity.x;
+            float horizontalForce = horizontalAccel * GetComponent<Rigidbody2D>().mass;
+            if(Input.GetKey(left)){
+                if(horizontalVel >= -maxHorizontalSpeed){
+                    GetComponent<Rigidbody2D>().AddForce(Vector2.left * horizontalForce);
+                }
             }
-        }
 
-        if(Input.GetKey(right)){
-            if(horizontalVel <= maxHorizontalSpeed){
-                GetComponent<Rigidbody2D>().AddForce(Vector2.right * horizontalForce);
+            if(Input.GetKey(right)){
+                if(horizontalVel <= maxHorizontalSpeed){
+                    GetComponent<Rigidbody2D>().AddForce(Vector2.right * horizontalForce);
+                }
             }
         }
 
