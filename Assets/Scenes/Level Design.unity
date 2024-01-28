@@ -621,7 +621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 653191381}
   player2: {fileID: 653917615}
-  scaleCoef: 0.5
+  scaleCoef: 0.8
 --- !u!1 &653191381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 414409336740115684, guid: 2d9642d7d53d7b0468c879aa588fcb2f, type: 3}
