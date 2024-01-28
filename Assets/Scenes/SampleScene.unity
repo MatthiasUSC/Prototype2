@@ -560,15 +560,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5790323930508544724, guid: 2d9642d7d53d7b0468c879aa588fcb2f, type: 3}
       propertyPath: jump
-      value: 0
+      value: 273
       objectReference: {fileID: 0}
     - target: {fileID: 5790323930508544724, guid: 2d9642d7d53d7b0468c879aa588fcb2f, type: 3}
       propertyPath: left
-      value: 0
+      value: 276
       objectReference: {fileID: 0}
     - target: {fileID: 5790323930508544724, guid: 2d9642d7d53d7b0468c879aa588fcb2f, type: 3}
       propertyPath: right
-      value: 0
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 7308975483786635668, guid: 2d9642d7d53d7b0468c879aa588fcb2f, type: 3}
       propertyPath: m_LocalPosition.x
