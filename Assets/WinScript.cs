@@ -15,6 +15,8 @@ public class WinScript : MonoBehaviour
             Time.timeScale = Mathf.Lerp(1, 0, ratio);
         }
 
+        Time.timeScale = 1;
+
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
     }
