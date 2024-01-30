@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
         {
             remainingTime -= Time.deltaTime;
         }
-        else if (remainingTime <= 30)
+        else if (remainingTime <= 30 && remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
             timerText.color = Color.red;
