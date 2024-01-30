@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WinScript : MonoBehaviour
 {
+    [SerializeField] private float remainingTime;
     IEnumerator End()
     {
         float elapsedTime = 0;
@@ -23,6 +24,19 @@ public class WinScript : MonoBehaviour
 
     void OnCollisionEnter(Collision col){
         if(col.gameObject.tag == "Player"){
+            StartCoroutine(End());
+        }
+    }
+    
+    void Update()
+    {
+        if (remainingTime > 0)
+        {
+            remainingTime -= Time.deltaTime;
+        }
+        else if (remainingTime < 0)
+        {
+            remainingTime = 0;
             StartCoroutine(End());
         }
     }

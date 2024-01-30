@@ -30,12 +30,12 @@ public class PlayerController : MonoBehaviour
         isGrounded = false;
         RaycastHit hit;
         if(Physics.Raycast(groundCheck1.transform.position, Vector3.down, out hit, 0.1f)){
-            if(hit.transform.tag == "Ground" || hit.transform.tag == "Player"){
+            if(hit.transform.tag == "Ground" || hit.transform.tag == "Player" || hit.transform.tag == "Abomination"){
                 isGrounded = true;
             }
         }
         if(Physics.Raycast(groundCheck2.transform.position, Vector3.down, out hit, 0.1f)){
-            if(hit.transform.tag == "Ground" || hit.transform.tag == "Player"){
+            if(hit.transform.tag == "Ground" || hit.transform.tag == "Player" || hit.transform.tag == "Abomination"){
                 isGrounded = true;
             }
         }
